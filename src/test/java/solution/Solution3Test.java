@@ -68,5 +68,14 @@ public class Solution3Test {
         List<Integer> result6 = solution.largestDivisibleSubset(nums5);
         assertEquals(expected5, result5);
 
+        // Test new case
+        int[] nums7 = {1,2,4};
+        List<Integer> expected7 = new ArrayList<Integer>();
+        expected7.add(4);
+        expected7.add(2);
+        expected7.add(1);
+        List<Integer> result7 = solution.largestDivisibleSubset(nums7);
+        assertEquals(expected7, result7);
+
     }
 }
