@@ -1,5 +1,6 @@
 package solution;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -9,9 +10,13 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 public class Solution3Test {
+    private Solution3 solution;
+    @Before
+    public void beforeTest(){
+        solution = new Solution3();
+    }
     @Test
     public void testLargestDivisibleSubset(){
-        Solution3 solution = new Solution3();
 
         // Test case 1
         int[] nums1 = {1, 2, 3, 4, 8};
